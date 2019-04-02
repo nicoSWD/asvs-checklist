@@ -1,0 +1,73 @@
+#!/usr/bin/env php
+<?php declare(strict_types=1);
+
+namespace {
+    use function owasp_asvs\error;
+
+    if (!isset($argv[1])) {
+        error('No csv file supplied');
+    }
+
+    $fp = @fopen($argv[1], 'r');
+
+    if ($fp === false) {
+        error('Unable to read csv file');
+    }
+
+    fgets($fp); // skip header line
+
+    while (!feof($fp)) {
+        [, $name, $item, $desc, $l1, $l2, , $cwe] = fgetcsv($fp);
+
+        owasp_asvs\write($name, [$item, owasp_asvs\level($l1, $l2), $desc, $cwe]);
+    }
+}
+
+namespace owasp_asvs {
+    function level(string $l1, string $l2): string
+    {
+        switch (true) {
+            case $l1:
+                return '1';
+            case $l2:
+                return '2';
+            default:
+                return '3';
+        }
+    }
+
+    function write(string $name, array $data): void
+    {
+        fputcsv(get_output_file_handle($name), $data);
+    }
+
+    /** @return resource */
+    function get_output_file_handle(string $name)
+    {
+        static $handles = [];
+
+        if (!isset($handles[$name])) {
+            if (!ctype_alpha($name)) {
+                error('Invalid category name');
+            }
+
+            $handles[$name] = @fopen(__DIR__ . "/parsed/{$name}.csv", 'a+');
+
+            if ($handles[$name] === false) {
+                error('Unable to open output file');
+            }
+
+            register_shutdown_function(function () use ($handles, $name) {
+                fclose($handles[$name]);
+            });
+        }
+
+        return $handles[$name];
+    }
+
+    function error(string $message): void
+    {
+        echo $message, PHP_EOL;
+        exit(1);
+    }
+}
