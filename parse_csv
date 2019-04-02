@@ -51,7 +51,7 @@ namespace owasp_asvs {
                 error('Invalid category name');
             }
 
-            $handles[$name] = @fopen(__DIR__ . "/parsed/{$name}.csv", 'a+');
+            $handles[$name] = @fopen(__DIR__ . "/parsed/{$name}.csv", 'w+');
 
             if ($handles[$name] === false) {
                 error('Unable to open output file');
