@@ -1,5 +1,5 @@
-OWASP Application Security Verification Standard 4.0 Checklist
-==============================================================
+OWASP ASVS 4.0 Checklist
+========================
 
 Google Docs file:
 https://docs.google.com/spreadsheets/d/19RBElPz3bnYQprlc3RidueYd81bY7kRiTHRopgtWOTE
