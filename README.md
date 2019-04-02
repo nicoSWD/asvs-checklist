@@ -1,10 +1,12 @@
-OWASP ASVS 4.0 Checklist
-========================
+🔐 OWASP ASVS 4.0 Checklist
+===========================
 
-Google Docs file:
-https://docs.google.com/spreadsheets/d/19RBElPz3bnYQprlc3RidueYd81bY7kRiTHRopgtWOTE
+Checklist for [OWASP's ASVS v4.0](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
 
-Or download the files here:
+It's probably easiest if you copy [this Google Docs](https://docs.google.com/spreadsheets/d/19RBElPz3bnYQprlc3RidueYd81bY7kRiTHRopgtWOTE
+) file to your own drive and work from there.
+
+Alternatively, you may download one of the files:
  - [ASVS_v4.0_Checklist.ods](ASVS_v4.0_Checklist.ods)
  - [ASVS_v4.0_Checklist.xlsx](ASVS_v4.0_Checklist.xlsx)
 
