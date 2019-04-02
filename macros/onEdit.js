@@ -1,6 +1,6 @@
 function onEdit(event) {
     var isApplicableRow = 6;
-    var tableRange = "A2:Z99";
+    var tableRange = "A2:H200";
 
     var sheet = SpreadsheetApp.getActiveSpreadsheet();
     var editedCell = sheet.getActiveCell();
