@@ -16,5 +16,5 @@ Usage
 If you need to re-parse the CSV into individual files for easier usage, run this:
 
 ```shell
-./parse_csv resources/OWASP_Application_Security_Verification_Standard_4.0-en.csv
+$ ./parse_csv resources/OWASP_Application_Security_Verification_Standard_4.0-en.csv
 ```
