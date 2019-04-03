@@ -11,6 +11,8 @@ Alternatively, you may download one of these files:
 
 ![screenshot](resources/screenshot.png)
 
+![screenshot](resources/screenshot2.png)
+
 Usage
 =====
 
