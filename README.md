@@ -8,8 +8,8 @@ Usage
 It's probably easiest if you copy [this Google Docs file](https://docs.google.com/spreadsheets/d/11BNnfM8ImoL7PolLTgPch7xfdQDYTRfELbnayfZLDNI) to your own drive and work from there.
 
 Alternatively, you may download one of these files:
- - [ASVS_v4.0_Checklist.ods](https://github.com/nicoSWD/owasp-asvs-4-checklist/raw/master/ASVS_v4.0_Checklist.ods)
- - [ASVS_v4.0_Checklist.xlsx](https://github.com/nicoSWD/owasp-asvs-4-checklist/raw/master/ASVS_v4.0_Checklist.xlsx)
+ - [ASVS_v4.0_Checklist.ods](https://github.com/nicoSWD/owasp-asvs-4-checklist/releases/download/v0.1/ASVS_v4.0_Checklist.ods)
+ - [ASVS_v4.0_Checklist.xlsx](https://github.com/nicoSWD/owasp-asvs-4-checklist/releases/download/v0.1/ASVS_v4.0_Checklist.xlsx)
 
 ![screenshot](resources/screenshot.png)
 
