@@ -21,5 +21,5 @@ Script Usage
 You most likely won't need this. But if you need to re-parse the CSV into individual files for easier usage, run this:
 
 ```shell
-$ ./csvparse resources/OWASP_Application_Security_Verification_Standard_4.0-en.csv
+$ bin/csvparse resources/OWASP_Application_Security_Verification_Standard_4.0-en.csv
 ```
