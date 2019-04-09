@@ -1,6 +1,8 @@
 🔐 OWASP ASVS 4.0 Checklist
 ===========================
 
+[![license](https://i.creativecommons.org/l/by-sa/3.0/80x15.png)](http://creativecommons.org/licenses/by-sa/3.0/)
+
 Checklist for OWASP's [Application Security Verification Standard 4.0](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
 
 Usage
